@@ -21,14 +21,3 @@ p {
   font-display: block;
   font-stretch: extra-expanded;
 }
-body {
-  background-color: black;
-  margin: 0%;
-  padding: 0%;
-}
-h1:hover{
-    background-color: black;
-}
-p:hover{
-    background-color: black;
-}
