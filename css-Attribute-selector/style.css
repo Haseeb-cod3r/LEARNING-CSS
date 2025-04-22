@@ -1,0 +1,34 @@
+/* attributes.css */
+
+/* [attribute]: Selects elements with the specified attribute */
+[type] {
+  border: 1px solid red;
+  margin-bottom: 5px;
+  padding: 5px;
+  display: block;
+}
+
+/* [attribute=value]: Selects elements with the specified attribute and value */
+[type="password"] {
+  background-color: lightcoral; 
+  color: white;
+}
+
+/* [attribute~=value]: Selects elements with an attribute containing the specified word (space-separated) */
+[title~="home"] {
+  font-style: italic;
+}
+/* [attribute^=value]: Selects elements with an attribute starting with the specified value */
+[href^="https"] {
+  font-weight: bold; 
+}
+
+/* [attribute$=value]: Selects elements with an attribute ending with the specified value */
+[href$=".com"] {
+  text-decoration: underline; 
+}
+
+/* [attribute*=value]: Selects elements with an attribute containing the specified value anywhere within it */
+[data-theme*="theme"] {
+  border: 2px dashed gray;
+}
