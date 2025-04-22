@@ -1,0 +1,109 @@
+/* form.css */
+
+/* :enabled: Selects form elements that are enabled (not disabled) */
+input:enabled,
+textarea:enabled,
+select:enabled,
+button:enabled {
+    border: 1px solid green;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: block;
+}
+
+/* :disabled: Selects form elements that are disabled */
+input:disabled,
+textarea:disabled,
+select:disabled,
+button:disabled {
+    background-color: #eee;
+    color: #777;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* :read-only: Selects form elements that are read-only */
+input[readonly],
+textarea[readonly] {
+    background-color: #f9f9f9;
+    border-color: #aaa;
+}
+
+/* :read-write: Selects form elements that are not read-only */
+input:read-write,
+textarea:read-write {
+    background-color: white;
+}
+
+/* :required: Selects form elements that have the 'required' attribute */
+input:required,
+textarea:required {
+    border-left: 5px solid red; /* Indicates a required field */
+}
+
+/* :optional: Selects form elements that do not have the 'required' attribute */
+input:optional,
+textarea:optional {
+    font-style: italic; /* Slightly styles optional fields */
+}
+
+/* :valid: Selects form elements with valid values (based on their type or constraints) */
+input:valid,
+textarea:valid {
+    border-color: blue; /* Indicates a valid input */
+}
+
+input[type="email"]:valid,
+input[type="url"]:valid {
+    background-color: #e0ffe0; /* Light green for valid email and URL */
+}
+
+/* :invalid: Selects form elements with invalid values (based on their type or constraints) */
+input:invalid,
+textarea:invalid {
+    border-color: orange; /* Indicates an invalid input */
+}
+
+input[type="email"]:invalid,
+input[type="url"]:invalid {
+    background-color: #ffe0e0; /* Light red for invalid email and URL */
+}
+
+/* :in-range: Selects input elements with a value within the specified range (for number and range inputs) */
+input[type="number"]:in-range,
+input[type="range"]:in-range {
+    outline: 1px solid purple;
+}
+
+/* :out-of-range: Selects input elements with a value outside the specified range */
+input[type="number"]:out-of-range,
+input[type="range"]:out-of-range {
+    outline: 2px solid red;
+}
+
+/* :placeholder-shown: Selects input elements that are displaying placeholder text */
+input:placeholder-shown,
+textarea:placeholder-shown {
+    color: #999;
+}
+
+/* :default: Selects form elements that are the default option (e.g., the initially selected radio button or select option) */
+input[type="radio"]:default,
+option:default {
+    outline: 2px solid black; /* Highlights the default radio button and select option */
+}
+
+/* :checked: Selects checked radio buttons or checkboxes (included here as it's relevant to forms) */
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    outline: 2px solid blue;
+}
+
+/* :focus: Styles the focused form element (included for completeness) */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: darkblue;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
