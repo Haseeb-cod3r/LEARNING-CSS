@@ -1,0 +1,27 @@
+/* styles.css */
+
+/* Descendant selector (space): Selects all <p> elements that are descendants of the .container element. */
+.container p {
+    color: blue;
+}
+
+/* Child selector (>): Selects all direct <p> children of the <section> element. */
+section > p {
+    font-style: italic;
+}
+
+/* Adjacent sibling selector (+): Selects the first <p> element that is immediately preceded by a <section> element. */
+section + p {
+    border-top: 2px solid green;
+    padding-top: 10px;
+}
+
+/* General sibling selector (~): Selects all <li> elements that are siblings of the .highlight class. */
+.highlight ~ li {
+    font-weight: bold;
+}
+
+/* Descendant selector (space): Selects all <p> elements that are descendants of the .nested element. */
+.nested p {
+    background-color: lightyellow;
+}

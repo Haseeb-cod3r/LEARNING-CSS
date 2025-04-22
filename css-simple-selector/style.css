@@ -1,0 +1,16 @@
+/* select all the h1 elements */
+h1{
+    color: green;
+}
+/* select element which has id="abc" */
+#abc{
+    color: yellow;
+}
+/* select element which has class="xyz" */
+.xyz{
+    color: aqua;
+}
+/* select whole body */
+*{
+    background-color: gray;
+}
