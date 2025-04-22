@@ -1,0 +1,71 @@
+/* structural.css */
+
+.container p:first-child {
+    color: green; /* Selects the first <p> element within the .container */
+    font-weight: bold;
+}
+
+.container p:last-child {
+    color: blue; /* Selects the last <p> element within the .container */
+    font-style: italic;
+}
+
+ul li:first-of-type {
+    background-color: lightyellow; /* Selects the first <li> element within any <ul> */
+}
+
+ol li:last-of-type {
+    background-color: lightcoral; /* Selects the last <li> element within any <ol> */
+}
+
+ul li:nth-child(2) {
+    text-decoration: underline; /* Selects the second <li> element within any <ul> */
+}
+
+ol li:nth-last-child(2) {
+    text-decoration: overline; /* Selects the second-to-last <li> element within any <ol> */
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2; /* Selects every odd table row within the <tbody> */
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #ddd; /* Selects every even table row within the <tbody> */
+}
+
+.container p:nth-child(even) {
+    font-size: 1.1em; /* Selects every even <p> element within the .container */
+}
+
+.container p:nth-child(3n+1) {
+    border-left: 3px solid orange; /* Selects every 1st, 4th, 7th, etc. <p> element within .container */
+    padding-left: 5px;
+}
+
+h1:only-child {
+    color: purple; /* Selects an <h1> element that is the only child of its parent */
+}
+
+.empty:empty {
+    border: 1px dashed red; /* Styles an element that has no children (including text nodes) */
+    height: 20px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+p:first-of-type {
+    font-size: 1.2em; /* Selects the first <p> element of its type within its parent */
+}
+
+p:last-of-type {
+    font-size: 0.9em; /* Selects the last <p> element of its type within its parent */
+}
+
+p:nth-of-type(2) {
+    color: brown; /* Selects the second <p> element of its type within its parent */
+}
+
+p:nth-last-of-type(2) {
+    color: teal; /* Selects the second-to-last <p> element of its type within its parent */
+}
