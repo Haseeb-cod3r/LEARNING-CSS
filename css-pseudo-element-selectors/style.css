@@ -1,0 +1,40 @@
+/* ::before - Adds content or styling before the element's content */
+.decorative-box::before {
+    content: "✨ "; /* Add a sparkle emoji before the text */
+    color: gold;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+/* ::after - Adds content or styling after the element's content */
+.decorative-box::after {
+    content: " 🌟"; /* Add a star emoji after the text */
+    color: silver;
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+/* ::first-letter - Styles the first letter of the first line of a block-level element */
+.first-letter-example::first-letter {
+    font-size: 2em;
+    color: navy;
+    font-weight: bold;
+}
+
+/* ::first-line - Styles the first line of a block-level element */
+.first-line-example::first-line {
+    color: green;
+    font-style: italic;
+}
+
+/* ::placeholder - Styles the placeholder text of an input element */
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* ::selection - Styles the text that is selected (highlighted) by the user */
+.selectable-text::selection {
+    background-color: lightblue;
+    color: darkblue;
+}
