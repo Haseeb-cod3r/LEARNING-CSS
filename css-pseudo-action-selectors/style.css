@@ -1,0 +1,29 @@
+/* user-actions.css */
+
+/* :visited: Styles links that the user has previously visited */
+a:visited {
+    color: purple; /* Changes the color of visited links to purple */
+}
+
+/* :hover: Styles an element when the user hovers the mouse over it */
+button:hover {
+    background-color: lightblue;
+    cursor: pointer; /* Changes the cursor to indicate interactivity */
+}
+
+/* :active: Styles an element when it is being actively interacted with (e.g., being pressed down) */
+a:active {
+    color: red;
+}
+
+/* :focus: Styles an element when it has focus (e.g., after being clicked or navigated to with the keyboard) */
+input:focus {
+    border: 2px solid green;
+    outline: none; /* Removes the default focus outline for a custom one */
+}
+
+/* :focus-within: Styles an element that contains another element that has focus */
+div:focus-within {
+    border: 2px dashed orange;
+    padding: 10px;
+}
