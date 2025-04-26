@@ -1,0 +1,45 @@
+/* Basic styles for body for readability */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;      /* Horizontal alignment of text */
+    text-shadow: 2px 2px 4px #888; /* Adds shadow to text: h-offset v-offset blur color */
+    margin-bottom: 20px;
+}
+
+.intro-paragraph {
+    text-align: justify;     /* Aligns text to both left and right margins */
+    text-indent: 30px;       /* Indents the first line of text */
+    margin-bottom: 15px;
+}
+
+.transformed-text {
+    text-transform: uppercase; /* Changes casing of text */
+    margin-bottom: 15px;
+}
+
+.shadowed-text {
+     /* Shadow is also applied to h1 above */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* More complex shadow */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.decorated-text {
+    text-decoration: underline wavy blue; /* Adds line decoration (style, color) */
+    margin-bottom: 15px;
+}
+
+.overflow-example {
+    width: 250px;           /* Needs a width to overflow */
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden;       /* Hides content that spills out */
+    white-space: nowrap;    /* Prevents text from wrapping */
+    text-overflow: ellipsis; /* Indicates overflow with "..." */
+    margin-top: 20px;
+}
