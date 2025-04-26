@@ -1,0 +1,183 @@
+/*
+  CSS Font Properties Examples
+
+  This file demonstrates various CSS properties
+  used to style text and fonts.
+*/
+
+/*
+  1. font-family:
+  Specifies the font for an element.
+  Provide a list of fonts in order of preference.
+  Always end with a generic font family (serif, sans-serif, monospace, cursive, fantasy).
+*/
+body {
+  font-family: Arial, sans-serif; /* Use Arial, if not available use any sans-serif font */
+  margin: 20px; /* Just adding some margin for better viewing */
+}
+
+h1 {
+  font-family: Georgia, serif; /* Use Georgia, if not available use any serif font */
+  /* You can combine font-family with other properties */
+  color: #2c3e50; /* Dark blue color */
+  margin-bottom: 20px;
+}
+
+
+/*
+  2. font-size:
+  Specifies the size of the font.
+  Can use pixels (px), em, rem, percentages (%), keywords (small, medium, large, etc.).
+  Using rem or em is often good for responsiveness.
+*/
+body {
+  font-size: 16px; /* Base font size for the body */
+}
+
+h1 {
+  font-size: 2.5em; /* Heading will be 2.5 times the font-size of its parent (body) */
+}
+
+.paragraph-styles {
+  font-size: 1rem; /* Paragraph will be 1 times the root element's font-size (html) */
+}
+
+.special-text {
+  font-size: 1.2em; /* This span's size is relative to its parent (the paragraph) */
+}
+
+/*
+  3. font-weight:
+  Specifies the weight (boldness) of the font.
+  Keywords: normal (400), bold (700).
+  Numeric values: 100, 200, 300, 400, 500, 600, 700, 800, 900.
+  Numeric values work best if the font family supports different weights.
+*/
+.paragraph-styles {
+  font-weight: normal; /* Default weight */
+}
+
+.another-paragraph {
+  font-weight: bold; /* Makes the text bold */
+}
+
+.special-text {
+  font-weight: 600; /* A weight between normal and bold (if supported by the font) */
+}
+
+/*
+  4. font-style:
+  Specifies the style of the font (e.g., italic).
+  Values: normal, italic, oblique.
+*/
+.paragraph-styles {
+  font-style: normal;
+}
+
+.another-paragraph {
+  /* font-style: italic; */ /* Uncomment to make this paragraph italic */
+}
+
+.special-text {
+  font-style: italic; /* Makes the text italic */
+}
+
+/*
+  5. font-variant:
+  Controls variations within the font, like small-caps.
+  The 'small-caps' value displays lowercase letters as uppercase letters, but in a smaller size.
+  More advanced font-variant properties exist for OpenType features.
+*/
+.another-paragraph {
+  /* font-variant: small-caps; */ /* Uncomment to make this paragraph small-caps */
+}
+
+.special-text {
+  font-variant: small-caps; /* Makes the special text small-caps */
+}
+
+/*
+  6. font-stretch:
+  Adjusts the width of the font (condensed or expanded).
+  Values: normal, ultra-condensed, extra-condensed, condensed, semi-condensed,
+          semi-expanded, expanded, extra-expanded, ultra-expanded.
+  NOTE: This property ONLY works if the font-family you are using has
+  specific font files or definitions for these stretched versions.
+  Variable fonts often support this better.
+*/
+/* Example (may not work with default system fonts): */
+/*
+.paragraph-styles {
+  font-stretch: condensed;
+}
+.another-paragraph {
+  font-stretch: expanded;
+}
+*/
+
+/*
+  7. line-height:
+  Sets the distance between lines of text. Crucial for readability.
+  Value can be a number (recommended, scales with font-size), length (px, em, rem), or percentage.
+  A unitless number like 1.5 means 1.5 times the font-size of the element.
+*/
+.paragraph-styles {
+  line-height: 1.6; /* Increase space between lines for readability */
+}
+
+.another-paragraph {
+  line-height: 1.4; /* Slightly less space */
+}
+
+
+/*
+  8. letter-spacing:
+  Sets the space between characters (letters).
+  Value is typically a length (px, em, rem). Can be positive or negative.
+*/
+h1 {
+  letter-spacing: -1px; /* Slightly reduce space between letters for heading */
+}
+
+.special-text {
+   letter-spacing: 2px; /* Increase space between letters */
+}
+
+/*
+  9. color:
+  While not strictly a 'font' property, it sets the color of the text,
+  which is essential for styling fonts.
+  Can use color names, hex codes, rgb, rgba, hsl, hsla values.
+*/
+.paragraph-styles {
+  color: #555; /* Medium gray text */
+}
+
+.another-paragraph {
+  color: rgb(0, 100, 0); /* Dark green text using RGB */
+}
+
+.special-text {
+  color: hsl(240, 100%, 50%); /* Blue text using HSL */
+}
+
+/*
+  Bonus: font (Shorthand Property)
+  Allows setting multiple font properties in one declaration.
+  Order: font-style | font-variant | font-weight | font-stretch | font-size / line-height | font-family
+  (font-size and font-family are required when using the shorthand)
+*/
+/* Example of using the font shorthand (uncomment to apply): */
+/*
+.paragraph-styles {
+  font: italic small-caps bold 1.1em/1.8 "Times New Roman", serif;
+  /* This sets:
+     font-style: italic;
+     font-variant: small-caps;
+     font-weight: bold;
+     font-size: 1.1em;
+     line-height: 1.8;
+     font-family: "Times New Roman", serif;
+  */
+/* }
+*/
