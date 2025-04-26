@@ -1,0 +1,51 @@
+/* Basic styles for body for readability */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* Explain color properties */
+.box h2 {
+    color: navy; /* Sets the color of the text */
+    margin-top: 0;
+}
+
+.box p {
+    color: #333; /* Sets the color of the text */
+}
+
+/* Styles for the boxes with different background colors */
+.box {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Explain color formats */
+
+/* HEX: Color defined using hexadecimal code (#RRGGBB) */
+#box1 {
+    background-color: #e74c3c; /* Reddish background using HEX */
+}
+
+/* RGB: Color defined using Red, Green, Blue values (0-255) */
+#box2 {
+    background-color: rgb(46, 204, 113); /* Greenish background using RGB */
+}
+
+/* HSL: Color defined using Hue (0-360), Saturation (0-100%), Lightness (0-100%) */
+#box3 {
+    background-color: hsl(235, 85%, 63%); /* Bluish background using HSL */
+    color: white; /* White text for contrast */
+}
+
+/* Alpha: Optional value (0-1 or 0-100%) for transparency */
+/* Used with rgba() or hsla() */
+#box4 {
+    background-color: rgba(155, 89, 182, 0.6); /* Purple background with 60% opacity using RGBA */
+    color: white; /* White text for contrast */
+}
+
+/* Background-color: Sets the background color of an element */
+/* (Applied to each .box above) */
