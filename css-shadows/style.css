@@ -1,0 +1,21 @@
+/*
+  text-shadow: Adds a shadow effect to text.
+  Syntax: h-offset v-offset blur-radius color;
+  (horizontal, vertical, how much blur, color)
+*/
+h1 {
+    text-shadow: 2px 2px 4px #777777; /* A simple grey shadow */
+  }
+  
+  /*
+    box-shadow: Adds a shadow effect to an element's box.
+    Syntax: h-offset v-offset blur-radius spread-radius color;
+    (horizontal, vertical, how much blur, how much to expand, color)
+  */
+  div {
+    width: 150px;      /* Basic size */
+    height: 80px;
+    margin: 20px;      /* Add some space around it */
+    background-color: #ffffff; /* Give the box a background */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); /* A slightly blurred black shadow */
+  }
