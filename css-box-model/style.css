@@ -1,0 +1,35 @@
+/*
+   CSS Box Model Explanation:
+   Every HTML element can be considered a box.
+   This box is made up of four parts, from the inside out:
+
+   1. Content: The actual content of the element (text, images, etc.).
+   2. Padding: Space between the content and the border. It's inside the border.
+   3. Border: A line that goes around the padding and content.
+   4. Margin: Space outside the border, separating this box from other elements.
+
+   The total space an element takes up is the sum of its margin, border, padding, and content width/height.
+   By default, width/height applies to the content area (content-box).
+   Using box-sizing: border-box includes padding and border within the specified width/height.
+*/
+
+.box {
+    /* Content */
+    width: 200px; /* Sets the width of the content area */
+    height: 100px; /* Sets the height of the content area */
+    background-color: lightblue; /* Background color for the content + padding */
+    padding: 20px; /* Adds 20px space between content and border on all sides */
+    border: 5px solid navy; /* Adds a 5px solid navy line around the padding */
+    margin: 30px; /* Adds 30px space outside the border on all sides */
+
+    /* box-sizing: border-box; Uncommenting this makes the width/height include padding and border */
+}
+
+.another-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    padding: 20px;
+    border: 5px solid darkgreen;
+    margin: 30px; /* This margin interacts with the margin of the first box */
+}
