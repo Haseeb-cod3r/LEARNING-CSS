@@ -1,0 +1,79 @@
+/* Basic styling for demonstration */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #f9f9f9;
+}
+
+.box {
+    width: 150px;
+    height: 80px;
+    background-color: lightblue;
+    border: 1px solid steelblue;
+    color: #333;
+    text-align: center;
+    line-height: 80px; /* Center text vertically */
+    margin: 10px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* --- CSS Positioning Explained --- */
+
+/* Relative Positioning */
+.relative {
+    /* position: relative; Makes the element positioned relative to its normal position.
+       top, right, bottom, and left properties can then be used to offset it from that normal position.
+       The space the element would normally occupy is preserved in the layout. */
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: lightgreen;
+}
+
+/* Absolute Positioning */
+.absolute-container {
+    /* position: relative; or absolute, fixed, sticky on the container makes it a "positioned ancestor".
+       An absolutely positioned element will be positioned relative to its nearest positioned ancestor. */
+    position: relative; /* This makes this container the positioning context for the absolute box inside */
+    height: 200px; /* Give it some height to show the absolute box inside */
+    border: 2px dashed orange;
+    padding: 10px;
+}
+
+.absolute {
+     /* position: absolute; Removes the element from the normal document flow.
+        It is positioned relative to its nearest positioned ancestor (or the initial containing block if none).
+        Other elements will behave as if the absolute element doesn't exist in the flow. */
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: lightcoral;
+}
+
+/* Fixed Positioning */
+.fixed {
+    /* position: fixed; Removes the element from the normal document flow.
+       It is positioned relative to the viewport.
+       It stays in the same position even when the page is scrolled. */
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    background-color: lightgoldenrodyellow;
+    z-index: 100; /* Ensure it stays on top of other content */
+}
+
+/* Sticky Positioning */
+.sticky {
+    /* position: sticky; Behaves like position: relative until the scroll position reaches a certain point.
+       Once that point is reached (defined by top, right, bottom, or left), it sticks like position: fixed.
+       It requires a containing block with scrolling and a defined offset (e.g., top: 0). */
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport when its container scrolls */
+    background-color: lightsalmon;
+}
